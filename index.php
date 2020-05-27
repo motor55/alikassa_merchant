@@ -261,7 +261,7 @@ if (!class_exists('merchant_alikassa')) {
                 exit($this->messageResponse);
             }
             if ($action !== 'deposit') {
-//                $this->logs($orderId . ' invalid ACTION callback');
+                $this->logs($orderId . ' invalid ACTION callback');
                 exit($this->messageResponse);
             }
 
